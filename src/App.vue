@@ -52,7 +52,7 @@ export default {
         this.network = await this.web3.eth.net.getId();
         this.presale = new this.web3.eth.Contract(
             Presale,
-            "0x77320723e2d9e721006Aa4e55e95d317eB60390a"
+            "0x052b6f65673326A1b7dD8E339200Eec8887eeA8E"
           );
        this.locked = await this.presale.methods._locked().call();
        console.log('locked',await this.presale.methods._locked().call());
